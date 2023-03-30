@@ -1,7 +1,10 @@
 <template>
     <div class="registro">
-      <h2>Registro de Usuario</h2>
-      <form @submit.prevent="register"> 
+      <form @submit.prevent="register" class="form"> 
+        <header class="head-form">
+          <h2>Registro de Usuario</h2>
+          <p>Ingresa tus datos</p>
+        </header>
         <div class="form-group">
           <label for="nombre">Nombre</label>
           <input type="text" class="form-control" id="nombre" v-model="nombre" required>
@@ -42,7 +45,7 @@
           <input type="checkbox" class="form-check-input" id="aceptaTerminos" v-model="aceptaTerminos" required>
           <label class="form-check-label" for="aceptaTerminos">Acepto los términos y condiciones</label>
         </div>
-        <button type="submit" class="btn btn-primary">Crear Cuenta</button>
+        <center><button type="submit" class="log-in">Crear Cuenta</button></center>
       </form>
     </div>
   </template>

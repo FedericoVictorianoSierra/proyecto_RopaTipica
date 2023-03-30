@@ -33,9 +33,6 @@ export default {
 
 <!-- Define el componente de la aplicación web -->
 <template>
-  <div id="app">
-    <div class="container">
-        
       <!-- Si el usuario no está autenticado, muestra el componente de inicio de sesión -->
       <div v-if="!loggedIn">
         <InicioSesion @Eventologin="loggedIn = $event"></InicioSesion>
@@ -45,6 +42,4 @@ export default {
         <router-view></router-view>
         <!--<router-link to="/hola" exact-path>Ir a la ruta Hola</router-link>-->
     </div>
-    </div>
-  </div>
 </template>
