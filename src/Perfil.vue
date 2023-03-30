@@ -1,85 +1,86 @@
 <template>
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil de usuario</title>
-    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-</head>
-<body>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perfil de usuario</title>
+        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    </head>
 
-     <!--==========================
-=            html            =
-===========================-->
-    <section class="seccion-perfil-usuario">
-        <div class="perfil-usuario-header">
-            <div class="perfil-usuario-portada">
-                <div class="perfil-usuario-avatar">
-                    <img src="http://localhost/multimedia/relleno/img-c9.png" alt="img-avatar">
-                    <button type="button" class="boton-avatar">
-                        <i class="far fa-image"></i>
+    <body>
+        <section class="seccion-perfil-usuario">
+            <div class="perfil-usuario-header">
+                <div class="perfil-usuario-portada">
+                    <router-view></router-view>
+                    <button class="boton-avatar" @click="irAMenu">
+                        <h6 class="titulo">Menu</h6>
+                    </button>
+                    <div class="perfil-usuario-avatar">
+                        <img src="https://pm1.narvii.com/6538/a613c79851e48320844c58e1ec035ebec7997759_128.jpg" alt="img-avatar">
+                        <button type="button" class="boton-avatar">
+                            <i class="far fa-image"></i>
+                        </button>
+                    </div>
+                    <button type="button" class="boton-portada">
+                        <i class="far fa-image"></i> Cambiar fondo
                     </button>
                 </div>
-                <button type="button" class="boton-portada">
-                    <i class="far fa-image"></i> Cambiar fondo
-                </button>
+            </div>
+            <div class="perfil-usuario-body">
+                <div class="perfil-usuario-bio">
+                    <h3 class="titulo">Nombre del Usuario</h3>
+
+                    <h6 class="titulo2">Descipcion del perfil.</h6>
+                    
+                </div>
+                <div class="perfil-usuario-footer">
+                    <ul class="lista-datos">
+                        <li><i class="icono fas fa-map-signs"></i> Nombre:</li>
+                        <li><i class="icono fas fa-user-check"></i> Apellido Materno:</li>
+                        <li><i class="icono fas fa-user-check"></i> Apellido Paterno:</li>
+                        <li><i class="icono fas fa-phone-alt"></i> Telefono:</li>
+                        <li><i class="icono fas fa-briefcase"></i> Email:</li>
+                    </ul>
+                    <ul class="lista-datos">
+                        <li><i class="icono fas fa-map-marker-alt"></i> País:</li>
+                        <li><i class="icono fas fa-map-marker-alt"></i> Estado</li>
+                        <li><i class="icono fas fa-calendar-alt"></i> Fecha nacimiento.</li>
+                        <li><i class="icono fas fa-share-alt"></i><a href="#"> Solicitar ayuda </a></li>
+                        <li><i class="icono fas fa-building"></i> <a href="#">Cambiar contraseña</a></li>
+                    </ul>
+                </div>
+                <div class="redes-sociales">
+                    <a href="" class="boton-redes facebook fab fa-facebook-f"><i class="icon-facebook"></i></a>
+                    <a href="" class="boton-redes twitter fab fa-twitter"><i class="icon-twitter"></i></a>
+                    <a href="" class="boton-redes instagram fab fa-instagram"><i class="icon-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="mis-redes" style="display: block;position: fixed;bottom: 1rem;left: 1rem; opacity: 0.5; z-index: 1000;">
+            <p style="font-size: .75rem;">Ropa típica</p>
+            <div>
+                <a target="_blank" href="https://www.facebook.com/ApockGraficos"><i class="fab fa-facebook-square"></i></a>
+                <a target="_blank" href="https://twitter.com/ApockGraficos"><i class="fab fa-twitter"></i></a>
+                <a target="_blank" href="https://www.instagram.com/ApockGraficos"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UC15DkMZQ80aoW_Rqk4n2T_w"><i
+                        class="fab fa-youtube"></i></a>
             </div>
         </div>
-        <div class="perfil-usuario-body">
-            <div class="perfil-usuario-bio">
-                <h3 class="titulo">Nombre del Usuario</h3>
-                <p class="texto">Descipcion del perfil.</p>
-            </div>
-            <div class="perfil-usuario-footer">
-                <ul class="lista-datos">
-                    <li><i class="icono fas fa-map-signs"></i> Nombre:</li>
-                    <li><i class="icono fas fa-user-check"></i> Apellido Materno:</li>
-                    <li><i class="icono fas fa-user-check"></i> Apellido Paterno:</li>
-                    <li><i class="icono fas fa-phone-alt"></i> Telefono:</li>
-                    <li><i class="icono fas fa-briefcase"></i> Email:</li>
-                </ul>
-                <ul class="lista-datos">
-                    <li><i class="icono fas fa-map-marker-alt"></i> País:</li>
-                    <li><i class="icono fas fa-map-marker-alt"></i> Estado</li>
-                    <li><i class="icono fas fa-calendar-alt"></i> Fecha nacimiento.</li>
-                    <li><i class="icono fas fa-share-alt"></i><a href="#"> Solicitar ayuda </a></li>
-                    <li><i class="icono fas fa-building"></i> <a href="#">Cambiar contraseña</a></li>
-                </ul>
-            </div>
-            <div class="redes-sociales">
-                <a href="" class="boton-redes facebook fab fa-facebook-f"><i class="icon-facebook"></i></a>
-                <a href="" class="boton-redes twitter fab fa-twitter"><i class="icon-twitter"></i></a>
-                <a href="" class="boton-redes instagram fab fa-instagram"><i class="icon-instagram"></i></a>
-            </div>
-        </div>
-    </section>
-    <!--====  End of html  ====-->
-
-<!--=============================
-redes sociales fijadas en pantalla
-No es necesario que copies esto!
-==============================-->
-
-<div class="mis-redes" style="display: block;position: fixed;bottom: 1rem;left: 1rem; opacity: 0.5; z-index: 1000;">
-    <p style="font-size: .75rem;">Ropa típica</p>
-    <div>
-        <a target="_blank" href="https://www.facebook.com/ApockGraficos"><i class="fab fa-facebook-square"></i></a>
-        <a target="_blank" href="https://twitter.com/ApockGraficos"><i class="fab fa-twitter"></i></a>
-        <a target="_blank" href="https://www.instagram.com/ApockGraficos"><i class="fab fa-instagram"></i></a>
-        <a target="_blank" href="https://www.youtube.com/channel/UC15DkMZQ80aoW_Rqk4n2T_w"><i class="fab fa-youtube"></i></a>
-    </div>
-</div>
-<!--====  End of tarjeta  ====-->
-</body>
-
+    </body>
 </template>
 
-
+<script>
+export default {
+    methods: {
+        irAMenu() {
+            this.$router.push('/Menu')
+        }
+    }
+}
+</script>
 <style type="text/css">
-/*=====================================
-reset estilos
-no es necesario que copies esto
-=====================================*/
 
 html {
     -webkit-text-size-adjust: 100%;
@@ -102,10 +103,6 @@ body {
     font-family: "Arial", Segoe UI, Tahoma, sans-serifl, Helvetica Neue, Helvetica;
 }
 
-/*=====================================
-estilos de la utilidad
-Copiar esto
-=====================================*/
 .seccion-perfil-usuario .perfil-usuario-body,
 .seccion-perfil-usuario {
     display: flex;
@@ -129,12 +126,6 @@ Copiar esto
     height: 17rem;
     background-image: linear-gradient(45deg, #BC3CFF, #317FFF);
     border-radius: 0 0 20px 20px;
-    /*
-    background-image: url('http://localhost/multimedia/png/user-portada-3.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    */
 }
 
 .seccion-perfil-usuario .perfil-usuario-portada .boton-portada {
@@ -201,12 +192,19 @@ Copiar esto
     margin-bottom: 0.5rem;
 }
 
-.section-perfil-usuario{
+.titulo2 {
+    display: block;
+    width: 100%;
+    font-size: 1.0em;
+    margin-bottom: 0.5rem;
+}
+
+.section-perfil-usuario {
     background-color: #fff;
 }
+
 .seccion-perfil-usuario .perfil-usuario-body .texto {
     color: #848484;
-    font-size: 0.95em;
 }
 
 .seccion-perfil-usuario .perfil-usuario-footer,
@@ -315,6 +313,7 @@ Copiar esto
     margin-right: .5rem;
     display: inline-block;
 }
+
 .mensaje a:hover {
     color: #309B76;
     transform: scale(1.4)

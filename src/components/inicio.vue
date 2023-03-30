@@ -1,31 +1,37 @@
 <template>
   <body class="body">
-  <div class="pagina-inicio mx-auto">
-    <div class="container">
-      <form class="form" v-if="!mostrarRegistro" @submit.prevent="login">
-        <header class="head-form">
-          <h2>Inicio de sesión</h2>
-          <p>Inicia sesión usando tu nombre de usuario y contraseña</p>
-        </header>
-        <div class="field-set">
-          <label for="email">Correo electrónico</label>
-          <input type="email" class="form-control" id="email" v-model="email" placeholder="correo@gmail.com" required>
+    <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <div class="pagina-inicio mx-auto">
+      <div class="container">
+        <form class="form" v-if="!mostrarRegistro" @submit.prevent="login">
+          <header class="head-form">
+            <h2>Inicio de sesión</h2>
+            <p>Inicia sesión usando tu nombre de usuario y contraseña</p>
+          </header>
+          <div class="field-set">
+            <label for="email">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" v-model="email" placeholder="correo@gmail.com" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input type="password" class="form-control" id="password" v-model="password" placeholder="1234" required>
+          </div>
+          <br>
+          <center>
+            <button type="submit" class="log-in">Iniciar sesión</button>
+            <button type="button" class="btn btn-link" @click="mostrarRegistroFunc()">Registrarse</button>
+
+            <button href="#"><i class="fa fa-facebook"></i>Facebook</button>
+            <button href="#"><i class="fa fa-google-plus"></i>Google +</button>
+            <button href="#"><i class="fa fa-twitter"></i>Twitter</button>
+          </center>
+        </form>
+        <div class="mt-3">
+          <registro v-if="mostrarRegistro" @submit.prevent="login" @registroComp="registroCompletado = $event"></registro>
         </div>
-        <div class="form-group">
-          <label for="password">Contraseña</label>
-          <input type="password" class="form-control" id="password" v-model="password" placeholder="1234" required>
-        </div>
-        <br>
-        <center>
-        <button type="submit" class="log-in">Iniciar sesión</button>
-        <button type="button" class="btn btn-link" @click="mostrarRegistroFunc()">Registrarse</button>
-      </center>
-      </form>
-      <div class="mt-3">
-        <registro v-if="mostrarRegistro" @submit.prevent="login" @registroComp="registroCompletado = $event"></registro>
       </div>
     </div>
-  </div>
   </body>
 </template>
 
@@ -72,6 +78,23 @@ export default {
 
 
 <style>
+.fa-facebook {
+  color: #4F79A7;
+}
+
+.fa-google-plus {
+  color: #D64E3C;
+}
+
+.fa-twitter {
+  color: #4ECDED;
+}
+
+.fa-facebook,
+.fa-google-plus,
+.fa-twitter {
+  padding: 8px;
+}
 
 /* End Global rules */
 
@@ -104,7 +127,7 @@ export default {
 }
 
 /* form Container */
-form .con {
+.form .con {
   display: -webkit-flex;
   display: flex;
 
@@ -129,6 +152,7 @@ header h2 {
   font-family: 'Playfair Display', serif;
   color: #3e403f;
 }
+
 header p {
   letter-spacing: 0.05em;
 }
@@ -220,5 +244,4 @@ button:hover {
 /* buttons hover Animation */
 button:hover {
   animation: ani9 0.4s ease-in-out infinite alternate;
-}
-</style>
+}</style>

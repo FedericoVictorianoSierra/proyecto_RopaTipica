@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router"
 import App from "./App.vue"
 import Carrito from "./Carrito.vue"
 import Venta from "./Venta.vue"
+import Perfil from "./Perfil.vue"
 
 const routes = [
     {
@@ -18,6 +19,11 @@ const routes = [
         name: 'venta',
         path: '/Venta',
         component: Venta
+    },
+    {
+        name: 'perfil',
+        path: '/Perfil',
+        component: Perfil
     }
 ]
 
