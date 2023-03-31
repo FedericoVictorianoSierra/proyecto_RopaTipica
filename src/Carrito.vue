@@ -226,35 +226,13 @@ export default {
     text-align: start;
   }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
+
 #cuerpo {
     font-family: 'Space Grotesk', sans-serif;
     background-color: #141C29;
     padding-top: 80px;
 }
 
-img {
-    width: 320px;
-    height: 340px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:15%;
-    height: 70px;
-    top: 0;
-    position: fixed;
-    width: 100%;
-
-}
 .scroll{
     background-color: aliceblue;
     box-shadow: .1rem .2rem .3rem #333;
