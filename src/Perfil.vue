@@ -51,6 +51,7 @@
                         <li><i class="icono fas fa-calendar-alt"></i> Fecha nacimiento.</li>
                         <li><i class="icono fas fa-share-alt"></i><a href="#"> Solicitar ayuda </a></li>
                         <li><i class="icono fas fa-building"></i> <a href="#">Cambiar contraseña</a></li>
+                        <li><a href="#">Cerrar sesión</a></li>
                     </ul>
                 </div>
                 <div class="redes-sociales">
@@ -280,7 +281,7 @@ body {
     background: linear-gradient(45deg, #FF2DFD, #40A7FF);
 }
 
-/* adactacion a dispositivos */
+/* adaptacion a dispositivos */
 @media (max-width: 750px) {
     .seccion-perfil-usuario .lista-datos {
         width: 100%;
