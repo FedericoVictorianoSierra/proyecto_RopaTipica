@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import sesion from './Sesion.vue'
+import sesion from './Carrito.vue'
 
 
 import '../node_modules/bootstrap/dist/css/bootstrap.css'

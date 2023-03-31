@@ -39,10 +39,10 @@
   <style scoped>
   #tablar{
     background-color: transparent;
-    border-color:white;  
     
+    border-color:white;  
+    color:aliceblue;
     height: 250px;
-    align-items: center;
-    justify-content: center;
+    
   }
   </style>

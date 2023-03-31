@@ -7,7 +7,7 @@ import barra from './Barra.vue'
 export default {
   // Registra los subcomponentes 
   components: {
-    barra
+    barra, TablaCarrito
   }
 }
 </script>
@@ -33,7 +33,7 @@ export default {
     
     <div id="contenedorCompra">
         <div class="informacionCompra" id="informacionCompra">
-            <h2>Cesta</h2>
+            <h2 id="cesta">Cesta</h2>
             
             <img id="botonTrash1" class="botonTrash" src="img/trash.png" alt="">
             <TablaCarrito class="tablas" striped></TablaCarrito><br><br><br><br>
@@ -60,6 +60,10 @@ export default {
 * {
   margin: 0;
   padding: 0;
+}
+
+#cesta{
+    color:aliceblue;
 }
 
 .informacionCompra{
@@ -438,6 +442,7 @@ header{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    color: aliceblue;;
     gap: 150px;
     top:100px;
     left: 250px;
