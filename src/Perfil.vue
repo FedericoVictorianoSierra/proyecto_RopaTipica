@@ -58,7 +58,7 @@
             </div>
         </section>
 
-        <div class="mis-redes" style="display: block;position: fixed;bottom: 1rem;left: 1rem; opacity: 0.5; z-index: 1000;">
+        <div class="mis-redes" style="display: block;position: fixed;bottom: 2rem;left: 1rem; opacity: 0.5; z-index: 1000;">
             <p style="font-size: .75rem;">Ropa típica</p>
             <div>
                 <a target="_blank" href="https://www.facebook.com/ApockGraficos"><i class="fab fa-facebook-square"></i></a>
@@ -211,7 +211,7 @@ body {
 .seccion-perfil-usuario .perfil-usuario-bio {
     display: flex;
     flex-wrap: wrap;
-    padding: 1.5rem 2rem;
+    padding: 2rem 2rem;
     box-shadow: 0 0 12px rgba(0, 0, 0, .2);
     background-color: #fff;
     border-radius: 15px;
