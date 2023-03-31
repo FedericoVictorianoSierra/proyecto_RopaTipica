@@ -1,11 +1,20 @@
-<script setup>
+<script>
 //import navegador from './components/navegador.vue'
 
 import TablaCarrito from './components/tablacarrito.vue'
+import barra from './Barra.vue'
+
+export default {
+  // Registra los subcomponentes 
+  components: {
+    barra
+  }
+}
 </script>
 
 
 <template>
+  <barra></barra>
   <div class="carrito">   
     
     <!--<img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />-->
