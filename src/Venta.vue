@@ -1,13 +1,21 @@
-<script setup>
+<script>
 //import navegador from './components/navegador.vue'
 import TablaVenta from './components/tablaventa.vue'
 import formulario from './components/formulario.vue'
 import metodopago from './components/metodopago.vue'
+import barra from './Barra.vue'
 
+export default {
+  // Registra los subcomponentes 
+  components: {
+    barra
+  }
+}
 </script>
 
 <template>
-  
+  <barra></barra>
+
   <div class="venta">
     <h1 id="titulo">
       Compra

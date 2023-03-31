@@ -1,4 +1,9 @@
+
+
+
 <template>
+     <router-view></router-view>
+     <barra></barra>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +17,6 @@
         <section class="seccion-perfil-usuario">
             <div class="perfil-usuario-header">
                 <div class="perfil-usuario-portada">
-                    <router-view></router-view>
                     <button class="boton-avatar" @click="irAMenu">
                         <h6 class="titulo">Menu</h6>
                     </button>
@@ -73,11 +77,14 @@
 </template>
 
 <script>
+import barra from './Barra.vue'
 export default {
     methods: {
         irAMenu() {
             this.$router.push('/Menu')
         }
+    },components: {
+        barra
     }
 }
 </script>
@@ -320,3 +327,4 @@ body {
     transform: scale(1.4)
 }
 </style>
+
