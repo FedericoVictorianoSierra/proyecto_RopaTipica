@@ -1,57 +1,87 @@
 <template>
     <div>
         <form class="formulario">
+      <!-- Custom-Files -->
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+      <!-- Bootstrap css -->
+      <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+      <!-- Main css -->
+      <link rel="stylesheet" href="css/fontawesome-all.css">
+      <!-- Font-Awesome-Icons-CSS -->
+      <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+      <!-- pop-up-box -->
+      <link href="css/menu.css" rel="stylesheet" type="text/css" media="all" />
+          <div class="prin">
       
-      <div class="prin">
-      <label for="`type-${type}`" class="pais">País: </label>
-      <select id="pais" class="pais">
-        <option value="">Selecciona un país</option>
-        <option v-for="pais in paises" :value="pais">{{ pais }}</option>
-      </select>
+      <div class="controls form-group">
+										<select class="option-w3ls">
+											<option>Selecciona el país</option>
+											<option v-for="pais in paises" :value="pais">{{pais}}</option>
+
+									  </select>
+			</div>
+     
       <br><br>
-      <label for="estado" class="estado">Estado: </label>
-      <select id="estado" class="estado">
-        <option value="">Selecciona un estado</option>
-        <option v-for="estado in estados" :value="estado">{{ estado }}</option>
-      </select>
+      <div class="controls form-group">
+										<select class="option-w3ls">
+											<option>Selecciona el estado</option>
+											<option v-for="estado in estados" :value="estado">{{ estado }}</option>
+
+									  </select>
+			</div>
+      
       <br><br>
     </div>
     <div class="sec">
-      <label for="ciudad" class="ciudad">Ciudad: </label>
-      <select id="ciudad" class="ciudad">
-        <option value="">Selecciona una ciudad</option>
-        <option v-for="ciudad in ciudades" :value="ciudad">{{ ciudad }}</option>
-      </select>
+      <div class="controls form-group">
+										<select class="option-w3ls">
+											<option>Selecciona la ciudad</option>
+											<option v-for="ciudad in ciudades" :value="ciudad">{{ ciudad }}</option>
+
+									  </select>
+    </div>
     
     
       <br><br>
-      <label for="colonia" class="colonia">Colonia: </label>
-      <select id="colonia" class="colonia">
-        <option value="">Selecciona una colonia</option>
-        <option v-for="colonia in colonias" :value="colonia">{{ colonia }}</option>
-      </select>
+      <div class="controls form-group">
+										<select class="option-w3ls">
+											<option>Selecciona la colonia</option>
+											<option v-for="colonia in colonias" :value="colonia">{{ colonia }}</option>
+
+									  </select>
+       </div>
+      
       <br><br>
     </div>
   <div class="ter">
-    <label>No. Calle: </label>
-    <input value="" type="text">
+    <div class="controls form-group">
+      
+		<input id="numcalle" class="billing-address-name form-control" type="text" name="name" placeholder="Numero de calle" required="">
+		</div>
+
     <br><br> 
   </div>
   <div class="cuartdiv">
-    <label>Email address: </label>
-    <input value="" type="text">
-    <br><br> 
+    <div class="controls form-group">
+      
+      <input class="billing-address-name form-control" type="text" name="name" placeholder="Correo  electronico" required="">
+    </div><br><br>
+
     
-    <label>Codigo Postal: </label>
-    <input value="" type="text">
-    <br><br> 
+    <div class="controls form-group">
+      
+      <input class="billing-address-name form-control" type="text" name="name" placeholder="Codigo Postal" required="">
+    </div><br><br>
   </div>
   <div class="quintdiv">
-    <label>Detalles de envío: </label>
-    <input value="" type="text">
-    <br><br> 
-    <label>Costo de envío: </label>
-    <input value="" type="text">
+    <div class="controls form-group">
+      
+      <input class="billing-address-name form-control" type="text" name="name" placeholder="Detalles de envio" required="">
+    </div><br><br>
+    <div class="controls form-group">
+      
+      <input class="billing-address-name form-control" type="text" name="name" placeholder="Costo de envio" required="">
+    </div><br><br>
   </div>
 
     </form>  
@@ -78,59 +108,65 @@
       width: 700px;
       height: 300px;
       align-items: center;
+      border-radius: 50px ;
+      
      }
 
+     #numcalle{
+      left:-89px;
+     }
      .prin{
-      background-color: aliceblue;
+      
       display: flex;
       text-align: center;
       align-items: center;
       justify-content: space-around;
+      border-radius: 50px ;
       
      }
      .estado{
       
-      
+      border-radius: 50px ;
      }
 
      .ciudad{
-      
+      border-radius: 50px ;
       
      }
 
      .sec{
-      background-color: aliceblue;
+      
       display: flex;
       text-align: center;
       align-items: center;
       justify-content: space-around;
-      
+      border-radius: 50px ;
      }
 
      .ter{
-      background-color: aliceblue;
+      
       display: flex;
       text-align: center;
       align-items: center;
       justify-content: space-around;
-      
+      border-radius: 50px ;
      }
 
      .cuartdiv{
-      background-color: aliceblue;
+      
       display: flex;
       text-align: center;
       align-items: center;
       justify-content: space-around;
-      
+      border-radius: 50px ;
      }
 
      .quintdiv{
-      background-color: aliceblue;
+      
       display: flex;
       text-align: center;
       align-items: center;
       justify-content: space-around;
-      
+      border-radius: 50px ;
      }
 </style>

@@ -5,7 +5,7 @@
     <br><br>
     <b-button class="boton2" id="tarjeta-d">Tarjeta de Débito</b-button>
     <br><br>
-    <b-button class="boton2" id="deposito">Depósito</b-button>
+    <b-button class="boton2"  id="deposito">Depósito</b-button>
     <br><br>
 </template>
 

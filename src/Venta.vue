@@ -7,14 +7,15 @@ import metodopago from './components/metodopago.vue'
 </script>
 
 <template>
+  
   <div class="venta">
     <h1 id="titulo">
-      Venta
+      Compra
     </h1>
-    <h3 id="subtitulo">
+    <h3 id="subtitulos">
       Articulos a pagar:
     </h3>
-    <TablaVenta class="tabla"></TablaVenta>
+    <TablaVenta class="tablasr"></TablaVenta>
     <h5 class="texto" id="texto1">Fecha de<br>compra: 24/03/2023</h5>
     <h6 class="texto" id="texto2">Subtotal: $200 <br>
         Descuento: $150<br>
@@ -27,7 +28,7 @@ import metodopago from './components/metodopago.vue'
     <div>
       <h6 class="texto" id="texto4">Método de pago</h6>
       <metodopago class="metodopago"></metodopago>
-      <b-button class="botons"><router-link to="/menu" exact-path>Comprar</router-link></b-button>
+      <b-button class="botons"><router-link to="/menu" exact-path id="botons1">Comprar</router-link></b-button>
       
       <router-view></router-view>
     </div>
@@ -46,11 +47,23 @@ import metodopago from './components/metodopago.vue'
     display: flex;
     left: 42%;
     top:-202px;
-    width: 70px;
     border-radius: 10px;
-    justify-content: center;
+
+    z-index: 1;
+    background-color: #00b5ff;
+    width: 90px;
+    height: 35px;
+    border-radius: 10px ;
+    border: none;
   }
 
+  #botons1{
+    font-size: 17px;
+    font-weight: 300;
+    color: #000;
+    top: 3px;
+    left: 12px;
+  }
   .texto{
 
     font-size: 15px;
@@ -119,29 +132,25 @@ import metodopago from './components/metodopago.vue'
     justify-content: space-between;
   }
 
-  .venta{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
+  
   #titulo{
     font-size: 50px;
-    color: black;
+    color: #000;
     padding-bottom: 0px;
     left: 0%;
     text-align: center;
   }
-  #subtitulo{
+  #subtitulos{
     font-size: 30px;
-    color: black;
+    color: #000;
     padding-top: 80px;
     padding-bottom: 20px;
   }
   
-  .tabla{
+  .tablasr{
     justify-content: center;
     display: flex;
+    color: black;
     border-color:blue;
     text-align: center;
     font-size: 20px;
@@ -163,7 +172,7 @@ import metodopago from './components/metodopago.vue'
 
   #titulo{
     font-size: 50px;
-    color: black;
+    color: #000;
 
   }   
   #subtitulo{
@@ -181,5 +190,6 @@ import metodopago from './components/metodopago.vue'
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
   }
 </style>

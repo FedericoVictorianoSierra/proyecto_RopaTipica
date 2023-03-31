@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import sesion from './sesion.vue'
+import sesion from './App.vue'
 
 
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
