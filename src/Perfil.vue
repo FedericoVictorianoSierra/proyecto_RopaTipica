@@ -48,6 +48,7 @@
                         <li><i class="icono fas fa-calendar-alt"></i> Fecha nacimiento.</li>
                         <li><i class="icono fas fa-share-alt"></i><a href="#"> Solicitar ayuda </a></li>
                         <li><i class="icono fas fa-building"></i> <a href="#">Cambiar contraseña</a></li>
+                        <li><a href="#">Cerrar sesión</a></li>
                     </ul>
                 </div>
                 <div class="redes-sociales">
@@ -58,8 +59,8 @@
             </div>
         </section>
 
-        <div class="mis-redes" style="display: block;position: fixed;bottom: 2rem;left: 1rem; opacity: 0.5; z-index: 1000;">
-            <p style="font-size: .75rem;">Ropa típica</p>
+        <div class="mis-redes" style="display: block;position: fixed;bottom: 3rem;left: 1rem; opacity: 0.5; z-index: 1000;">
+            <p style="font-size: .85rem;">Ropa típica <br> La Mixtequita</p>
             <div>
                 <a target="_blank" href="https://www.facebook.com/ApockGraficos"><i class="fab fa-facebook-square"></i></a>
                 <a target="_blank" href="https://twitter.com/ApockGraficos"><i class="fab fa-twitter"></i></a>
@@ -277,7 +278,7 @@ body {
     background: linear-gradient(45deg, #FF2DFD, #40A7FF);
 }
 
-/* adactacion a dispositivos */
+/* adaptacion a dispositivos */
 @media (max-width: 750px) {
     .seccion-perfil-usuario .lista-datos {
         width: 100%;
