@@ -18,14 +18,13 @@ export default {
   <div class="carrito">   
     
     <!--<img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />-->
-    <header>
+    
     <h1 id="titulos">Shopping Car</h1>
         <div>
-            <img id="carritoimg" src="img/carrito-de-compras.png" alt="">
             
             <div id="numero"></div>
         </div>
-    </header>
+    
 
     <main>
         <div id="contenedor" class="contenedor"></div>
@@ -35,7 +34,7 @@ export default {
         <div class="informacionCompra" id="informacionCompra">
             <h2 id="cesta">Cesta</h2>
             
-            <img id="botonTrash1" class="botonTrash" src="img/trash.png" alt="">
+
             <TablaCarrito class="tablas" striped></TablaCarrito><br><br><br><br>
             
           </div>
@@ -57,10 +56,7 @@ export default {
 </template>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-}
+
 
 #cesta{
     color:aliceblue;
@@ -77,59 +73,6 @@ export default {
     position: fixed;
 }
 
-.botonTrash{
-  display: flex;
-  align-items: center;
-  height: 48px;
-  width: 24px;
-
-}
-
-
-#botonTrash1{
-    background-color: rgba(0, 0, 0, 0);
-    border:none;
-   
-    justify-content: center;
-    top:122px;
-    left: -69px;
-    align-items: center;
-}
-#botonTrash2{
-    background-color: rgba(0, 0, 0, 0);
-    border:none;
-   
-    justify-content: center;
-    top:212px;
-    left: -116px;
-    align-items: center;
-}
-#botonTrash3{
-    background-color: rgba(0, 0, 0, 0);
-    border:none;
-    
-    justify-content: center;
-    top:302px;
-    left:-162px;
-    align-items: center;
-}
-#botonTrash4{
-    background-color: rgba(0, 0, 0, 0);
-    border:none;
-    
-    justify-content: center;
-    top:382px;
-    left: -138px;
-    align-items: center;
-}
-#carritoimg {
-    width: 50px;
-    height: 50px;
-    top:1px;
-    left: -630px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
-}
  
   
   .boton1{
@@ -164,7 +107,6 @@ export default {
 
   .carrito{
     display: flex;
-    
     align-items: center;
     justify-content: center;
   }
@@ -173,11 +115,12 @@ export default {
     font-size: 50px;
     color: black;
     padding-bottom: 0px;
-    left: -2%;
+    top:-30%;
+    
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    margin: 30px 0px;
+  
   }
 
   #subtitulo{
@@ -330,7 +273,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    left: -200px;
+    left: 0px;
     width: 100%;
     height: 100%;
     position: fixed;
