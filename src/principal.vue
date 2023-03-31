@@ -38,24 +38,7 @@
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto p-4">
-
-
-                        <router-link to="/menu" exact-path><a class="nav-item nav-link active">INICIO</a></router-link>
-                        <router-link to="/Articulos" exact-path><a class="nav-item nav-link">ARTICULOS</a></router-link>
-                        <router-link to="/Carrito" exact-path><a class="nav-item nav-link">CARRITO</a></router-link>
-                        <router-link to="/Perfil" exact-path><a class="nav-item nav-link">PERFIL</a></router-link>
-                        <div class="nav-item dropdown">
-                            <!-- <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a> -->
-                            <div class="dropdown-menu text-capitalize">
-                                <a href="reservation.html" class="dropdown-item">Reservation</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            </div>
-                        </div>
-                        <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
-                    </div>
-                </div>
+                        <barra></barra>
             </nav>
         </div>
         <!-- Navbar End -->
@@ -187,19 +170,6 @@
                         <p>2.00 PM - 8.00 PM</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-5">
-                    <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">REGISTRATE</h4>
-                    <p>PARA UNA MEJOR EXPERIENCIA</p>
-                    <div class="w-100">
-                        <div class="input-group">
-                            <input type="text" class="form-control border-light" style="padding: 25px;"
-                                placeholder="Your Email">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary font-weight-bold px-3">REGISTRARCE</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5"
                 style="border-color: rgba(256, 256, 256, .1) !important;">
@@ -223,4 +193,12 @@
 <script>
 import '@/assets/css/style.min.css'
 import '@/assets/css/style.css';
+import barra from './Barra.vue'
+
+export default {
+    // Registra los subcomponentes 
+    components: {
+        barra
+    }
+}
 </script>

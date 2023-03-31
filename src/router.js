@@ -4,6 +4,7 @@ import Carrito from "./Carrito.vue"
 import Venta from "./Venta.vue"
 import Perfil from "./Perfil.vue"
 import Articulos from "./articulos.vue"
+import Particular from "./particular.vue"
 
 const routes = [
     {
@@ -30,6 +31,11 @@ const routes = [
         name: 'articulos',
         path: '/Articulos',
         component: Articulos
+    },
+    {
+        name: 'particular',
+        path: '/Particular',
+        component: Particular
     }
 ]
 

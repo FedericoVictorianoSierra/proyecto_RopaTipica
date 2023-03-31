@@ -7,7 +7,6 @@ import '../node_modules/bootstrap-vue/dist/bootstrap-vue.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.js'
 
 
-
 /*
 import $ from './assets/lib/jquery-3.4.1.min.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';

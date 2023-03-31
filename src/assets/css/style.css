@@ -6008,7 +6008,7 @@ a.close.disabled {
 .carousel-indicators .active {
   opacity: 1;
 }
-
+/*
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -6019,7 +6019,7 @@ a.close.disabled {
   padding-bottom: 20px;
   color: #fff;
   text-align: center;
-}
+}*/
 
 @keyframes spinner-border {
   to {
